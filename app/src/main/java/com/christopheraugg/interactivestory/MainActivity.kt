@@ -1,5 +1,6 @@
 package com.christopheraugg.interactivestory
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -21,7 +22,13 @@ class MainActivity : AppCompatActivity() {
 
         startButtonProperty.setOnClickListener {
             val name: String = nameProperty.text.toString()
-            Toast.makeText(this, name, Toast.LENGTH_LONG).show()
+            startStory()
         }
+    }
+
+    private fun startStory() {
+
+       val intent = Intent(this, StoryActivity::class.java)
+       startActivity(intent)
     }
 }
