@@ -1,2 +1,2 @@
 # kotlinInteractiveStory
-Kotlin Version of Interactive Story App
+Kotlin Version of Interactive Story Application
