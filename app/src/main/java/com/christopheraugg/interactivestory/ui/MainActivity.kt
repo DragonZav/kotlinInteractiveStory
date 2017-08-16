@@ -1,11 +1,11 @@
-package com.christopheraugg.interactivestory
+package com.christopheraugg.interactivestory.ui
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
+import com.christopheraugg.interactivestory.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,13 +22,14 @@ class MainActivity : AppCompatActivity() {
 
         startButtonProperty.setOnClickListener {
             val name: String = nameProperty.text.toString()
-            startStory()
+            startStory(name)
         }
     }
 
-    private fun startStory() {
+    private fun startStory(name:String) {
 
        val intent = Intent(this, StoryActivity::class.java)
+       intent.putExtra(getString(R.string.key_name), name)
        startActivity(intent)
     }
 }
