@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Signals from Mars</string>
     <string name="title_img">Signals from Mars title image</string>
-    <string name="story_img">Story Image</string>
+    <string name="story_img">Story Page Image</string>
     <string name="text_btn">START YOUR ADVENTURE</string>
     <string name="text_hint">Enter your name</string>
     <string name="key_name">name</string>
