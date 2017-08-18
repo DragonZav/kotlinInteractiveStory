@@ -36,14 +36,14 @@ class Story {
                 Choice(R.string.page4_choice1, 5),
                 Choice(R.string.page4_choice2,6))
 
-         _pages[5] = Page(R.drawable.page5, R.drawable.page5)
+         _pages[5] = Page(R.drawable.page5, R.string.page5)
 
-         _pages[6] = Page(R.drawable.page6, R.drawable.page6)
+         _pages[6] = Page(R.drawable.page6, R.string.page6)
 
     }
 
     fun getPage(pageNumber: Int): Page {
-        if (pageNumber <= _pages.size) {
+        if (pageNumber < _pages.size) {
             return _pages[pageNumber]
         }
         return _pages[0]

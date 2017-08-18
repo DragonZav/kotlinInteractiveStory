@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        nameProperty.setText("")
+    }
+
     private fun startStory(name:String) {
 
        val intent = Intent(this, StoryActivity::class.java)
